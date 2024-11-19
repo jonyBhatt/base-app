@@ -38,5 +38,7 @@ const styles = StyleSheet.create({
   },
   item: {
     textAlign: "center",
+    fontFamily: " Inter_400Regular",
+    fontWeight: "400",
   },
 });
