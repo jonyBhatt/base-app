@@ -10,8 +10,14 @@ export default function Day() {
           title: `Day ${day}`,
         }}
       />
-      <Text>{day}</Text>
+      <Text style={styles.text}>{day}</Text>
     </View>
   );
 }
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 100,
+    fontFamily: "Eater",
+    textAlign:"center"
+  },
+});
