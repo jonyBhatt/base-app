@@ -10,7 +10,7 @@ import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 import { StyleSheet, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import DayList from "./src/component/core/DayList";
+import DayList from "../src/component/core/DayList";
 
 export default function App() {
   const [loaded, error] = useFonts({
