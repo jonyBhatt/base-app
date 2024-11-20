@@ -1,6 +1,7 @@
+import DayList from "@Components/core/DayList";
 import { StyleSheet, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import DayList from "../src/component/core/DayList";
+// import DayList from "@Components/";
 
 export default function App() {
   return (
