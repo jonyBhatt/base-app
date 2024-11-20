@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo-google-fonts/eater": "^0.2.3",
     "@expo-google-fonts/inter": "^0.2.3",
     "expo": "~52.0.7",
     "expo-font": "~13.0.1",

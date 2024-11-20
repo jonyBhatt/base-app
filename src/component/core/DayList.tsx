@@ -3,7 +3,12 @@ export default function DayList() {
   const days = [...Array(24)].map((_, index) => index + 1);
 
   return (
-    <View>
+    <View
+      style={{
+        paddingBottom: 20,
+        flex:1
+      }}
+    >
       <FlatList
         data={days}
         contentContainerStyle={styles.content}
@@ -38,7 +43,8 @@ const styles = StyleSheet.create({
   },
   item: {
     textAlign: "center",
-    fontFamily: " Inter_400Regular",
+    fontFamily: "Eater",
     fontWeight: "400",
+    fontSize: 25,
   },
 });

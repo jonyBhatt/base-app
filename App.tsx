@@ -1,21 +1,23 @@
-import { StatusBar } from "expo-status-bar";
-import { FlatList, StyleSheet, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import DayList from "./src/component/core/DayList";
 import {
   Inter_400Regular,
   Inter_500Medium,
   Inter_900Black,
   useFonts,
 } from "@expo-google-fonts/inter";
+import { Eater_400Regular } from "@expo-google-fonts/eater";
 import * as SplashScreen from "expo-splash-screen";
+import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
+import { StyleSheet, Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import DayList from "./src/component/core/DayList";
 
 export default function App() {
   const [loaded, error] = useFonts({
     Inter_900Black,
     Inter_400Regular,
     Inter_500Medium,
+    Eater: Eater_400Regular,
   });
 
   useEffect(() => {
@@ -46,6 +48,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     padding: 20,
-    fontFamily: " Inter_900Black",
+    fontFamily: "Inter_900Black",
   },
 });
