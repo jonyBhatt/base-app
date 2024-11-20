@@ -1,8 +1,8 @@
 import { Link } from "expo-router";
 import { FlatList, Pressable, StyleSheet, Text, View } from "react-native";
 export default function DayList() {
-  const days = [...Array(24)].map((_, index) => index + 1);
-
+  const days = [...Array(24)].map((val, index) => index + 1);
+  // console.log(`day${days}`);
   return (
     <View
       style={{
@@ -19,13 +19,7 @@ export default function DayList() {
         }}
         renderItem={({ item }) => {
           return (
-            <Link
-              href={{
-                pathname: `/day/${item}`,
-                params: { id: "day" },
-              }}
-              asChild
-            >
+            <Link href={`/day${item}`} asChild>
               <Pressable style={styles.box}>
                 <Text style={styles.item}>Day {item}</Text>
               </Pressable>
