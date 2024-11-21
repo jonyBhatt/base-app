@@ -4,7 +4,6 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
       "@Navigation/*": ["src/navigation/*"],
       "@Components/*": ["src/component/*"],
       "@Screens/*": ["src/screens/*"],

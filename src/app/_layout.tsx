@@ -10,9 +10,9 @@ import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    Inter_900Black,
-    Inter_400Regular,
-    Inter_500Medium,
+    InterBold: Inter_900Black,
+    InterRegular: Inter_400Regular,
+    InterMedium: Inter_500Medium,
     Eater: Eater_400Regular,
   });
 
